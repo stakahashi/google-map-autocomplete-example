@@ -31,7 +31,7 @@ const GoogleMap = {
         input(input) {
             let params = new URLSearchParams();
             params.append('input', input);
-            axios('./autocomplate.php?' + params.toString()).then(res => this.list = res.data)
+            axios('./autocomplete.php?' + params.toString()).then(res => this.list = res.data)
         }
     }
 }
